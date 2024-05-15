@@ -1,0 +1,176 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 360px;
+    height: 600px;
+    background-color:hsl(216, 50%, 16%);
+    border-radius: 20px;
+    
+}
+
+.icon-view-bg{
+    display: none;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 75%;
+    height: 92%;
+    background-color: aqua;
+    opacity: 0.5;
+}
+
+.icon-view{
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute
+}
+
+.card h1{
+    margin: 10px 0px 0px 40px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Outfit';
+    font-weight: 600;
+}
+
+.card p{
+    margin: 10px 0px 0px 40px;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit';
+    font-weight: 300;
+}
+
+div.img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.card img{
+    margin: 10px;
+    display: flex;
+    width: 75%;
+    border-radius: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.info img{
+    width: 10px;
+    height: auto;
+}
+
+.eth{
+    margin: 0;
+    color: hsl(178, 100%, 50%);
+    font-family: 'Outside';
+    font-weight: 600;
+    
+}
+
+.eth img{
+    padding-top: 5px;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+}
+
+.time{
+    color: hsl(215, 51%, 70%);
+    font-weight: 600;
+}
+
+.time img{
+    width: 20px;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+}
+
+hr{
+    width: 90%; /* Set the width to 80% */
+    margin: 0 auto; /* Center the line */
+    border: none; /* Remove default border */
+    background-color: rgba(255, 255, 255, 0.3); /* Set faded color */
+    height: 1px; /* Set the height of the line */
+}
+
+
+.creator{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.creator img{
+    margin: 0 0 0 10px;
+    width: 15%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.text {
+    font-family: 'Outfit';
+    margin-right: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.text span{
+    font-family: 'Outfit';
+    color: grey;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.container > .card > h1:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.text:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.img:hover .icon-view {
+    display: block;
+  }
+
+  .img:hover .icon-view-bg{
+    display: block;
+  }
